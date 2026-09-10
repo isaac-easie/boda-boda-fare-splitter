@@ -59,4 +59,4 @@ Make sure Python 3 is installed.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/mobile-money-transaction-calculator.git
+git clone https://github.com/isaac-easie/mobile-money-transaction-calculator.git
