@@ -1,0 +1,35 @@
+START
+    DISPLAY "Mobile Money Transaction and Commission Calculator"
+    INPUT customer_name
+    INPUT transaction_type
+    INPUT transaction_amount
+    IF transaction_amount <= 0 THEN
+        DISPLAY "Invalid transaction amount"
+    ELSE
+        IF transaction_type = "withdrawal" THEN
+            transaction_charge = transaction_amount * 0.02
+            commission = transaction_amount * 0.005
+        ELSE IF transaction_type = "deposit" THEN
+            transaction_charge = 0
+            commission = transaction_amount * 0.003
+        ELSE
+            DISPLAY "Invalid transaction type"
+            STOP
+        END IF
+        total_amount = transaction_amount + transaction_charge
+        net_commission = commission
+        IF transaction_amount >= 50000 AND transaction_amount <= 1000000 THEN
+            DISPLAY "Transaction is within the normal agent limit"
+        ELSE
+            DISPLAY "Transaction is outside the normal agent limit"
+        END IF
+        DISPLAY customer_name
+        DISPLAY transaction_type
+        DISPLAY transaction_amount
+        DISPLAY transaction_charge
+        DISPLAY net_commission
+        DISPLAY total_amount
+    END IF
+
+END
+
