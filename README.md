@@ -1,6 +1,6 @@
 # mobile-money-transaction-calculator
 A Python console based Mobile Money Transaction and Commission Calculator developed as part of a Structured Programming group practical assignment.
-# Mobile Money Transaction and Commission Calculator
+# Mobile Money Transaction and Commission Calculator 
 
 A Python console-based program for calculating Mobile Money transaction charges, agent commissions, and transaction limits.
 
