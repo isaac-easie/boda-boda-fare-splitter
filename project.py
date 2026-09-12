@@ -1,9 +1,9 @@
-
 """Mobile money transaction and commission calculator."""
 import os,time as t
 def main():
-    # Display the title and collect the customer's transaction details.
-    print("Mobile Money Transaction and Commission Calculator" "\n built and tested by: [isaac,amos]")
+    print("Mobile", end=" ", flush=True); t.sleep(0.5); print("Money", end=" ", flush=True); t.sleep(0.5); print("Calculator", end=" ", flush=True); t.sleep(0.5); print("Ready!")
+    # get customer dtails
+    print("\n built and tested by: [isaac,amos]")
 
     customer_name = input("\n \nEnter customer name: ")
     transaction_type = input("Enter transaction type (withdrawal/deposit): \n1. Withdrawal \n2. Deposit \nType your choice: ")
@@ -11,16 +11,16 @@ def main():
     try:
         transaction_amount = float(input("Enter transaction amount: "))
     except ValueError:
-        # the amount must be numeric before the calculations can be performed.
+        # must be a number
         print("Invalid transaction amount")
         return
 
-    # reject zero and negative transaction amounts.
+    # no negative or zero transactions
     if transaction_amount <= 0:
         print("Invalid transaction amount")
         return
 
-    # caclculate the charge and commission based on the transaction type.
+    #charge n commision
     if transaction_type == "1" or transaction_type.lower() == "withdrawal":
         transaction_type = "Withdrawal"
         transaction_charge = transaction_amount * 0.02
@@ -34,36 +34,36 @@ def main():
         return
 
     total_amount = transaction_amount + transaction_charge
-    net_commission = commission
 
-    # check whether the amount is within the normal agent limit.
+    # normal agent limits
     if 50000 <= transaction_amount <= 1000000:
         print("Transaction is within the normal agent limit")
     else:
         print("Transaction is outside the normal agent limit")
 
-    # display the transaction summary.
+    # output tranasction results
     print("\n \n \nTransaction Summary:")
     print(f"Customer name: {customer_name}")
     print(f"Transaction type: {transaction_type}")
     print(f"Transaction amount: {transaction_amount:.2f}")
     print(f"Transaction charge: {transaction_charge:.2f}")
-    print(f"Net commission: {net_commission:.2f}")
+    print(f"Net commission: {commission:.2f}")
     print(f"Total amount: {total_amount:.2f}")
 
-#looping whole thing
+## loop the program
 while True:
+    #clear screen
+    os.system('cls' if os.name == 'nt' else 'clear')
     main()
-    # Ask the user if they want to perform another transaction.
+    #redo or quit program
     user_input = input("Press Enter to perform another transaction or type 'exit' to quit: ")
     if user_input.lower() == 'exit':
-        os.system('clear')
         print("Exiting the program...")
         t.sleep(0.5)
         print("built and tested by: [isaac,amos]")
         t.sleep(0.5)
         break
     else:
-        os.system('clear')
         continue
-#eeh...python is changing daily😂,some old ways no working for me
+# GitHub repository for reference:
+# git clone https://github.com/isaac-easie/mobile-money-transaction-calculator.git
