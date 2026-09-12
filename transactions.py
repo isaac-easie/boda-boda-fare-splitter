@@ -3,7 +3,7 @@ import os,time as t
 def main():
     print("Mobile", end=" ", flush=True); t.sleep(0.5); print("Money", end=" ", flush=True); t.sleep(0.5); print("Calculator", end=" ", flush=True); t.sleep(0.5); print("Ready!")
     # get customer dtails
-    print("\n built and tested by: [isaac,amos]")
+    print("\n built and tested by: [isaac,amos,faith]")
 
     customer_name = input("\n \nEnter customer name: ")
     transaction_type = input("Enter transaction type (withdrawal/deposit): \n1. Withdrawal \n2. Deposit \nType your choice: ")
