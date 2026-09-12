@@ -60,7 +60,7 @@ while True:
     if user_input.lower() == 'exit':
         print("Exiting the program...")
         t.sleep(0.5)
-        print("built and tested by: [isaac,amos]")
+        print("built and tested by: [isaac,amos,faith8]")
         t.sleep(0.5)
         break
     else:
