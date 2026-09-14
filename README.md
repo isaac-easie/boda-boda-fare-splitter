@@ -1,62 +1,67 @@
-# mobile-money-transaction-calculator
-A Python console based Mobile Money Transaction and Commission Calculator developed as part of a Structured Programming group practical assignment.
-# Mobile Money Transaction and Commission Calculator 
+# Boda-Boda Fare Splitter
 
-A Python console-based program for calculating Mobile Money transaction charges, agent commissions, and transaction limits.
+A simple Python console-based program that calculates how much each passenger should contribute when sharing a Boda-Boda fare.
 
-## 📌 Project Overview
+This project was developed as part of a Structured Programming practical assignment.
 
-This project was developed as part of a Group Practical Assignment in Structured Programming.
+## Project Description
 
-The program demonstrates basic programming and computational problem-solving concepts using a realistic Ugandan Mobile Money scenario.
+The Boda-Boda Fare Splitter helps passengers divide a transport fare among themselves.
 
-## 🎯 Objectives
+The user enters the total fare and the number of passengers. The program then calculates the amount each passenger should pay.
 
-The project demonstrates:
+The program also uses basic validation to make sure the values entered are reasonable before performing the calculation.
 
-- Algorithm design
-- Pseudocode
-- Flowchart development
-- Python programming
-- Variables and descriptive variable naming
+##files in the fare splitter
+boda-boda-fare-splitter/
+│
+├── fare_splitter.py
+├── flowchart.pdf
+├── pseudocode.md
+├── LICENSE
+└── README.md
+
+## Features
+
+- Accepts the total Boda-Boda fare
+- Accepts the number of passengers
+- Calculates the fare per passenger
+- Uses arithmetic operations
+- Uses conditional statements
+- Validates user input
+- Displays a clear transaction summary
+
+## Programming Concepts Used
+
+The project demonstrates the following Python concepts:
+
+- Variables
+- User input
 - Data types
-- Type casting using `int()` and `float()`
+- `int()` and `float()` type casting
 - Arithmetic operators
 - Relational operators
 - Logical operators
 - Conditional statements
-- Operator precedence
-- Console input and output
+- Formatted output
 
-## ⚙️ How the Program Works
+## How It Works
 
-The user enters:
+1. The program asks the user to enter the total fare.
+2. The user enters the number of passengers sharing the fare.
+3. The program checks whether the entered values are valid.
+4. The total fare is divided by the number of passengers.
+5. The program displays the fare each passenger should contribute.
 
-1. Customer name
-2. Transaction type
-3. Transaction amount
+## Example
 
-The program then:
+```text
+BODA-BODA FARE SPLITTER
 
-- Validates the transaction amount
-- Determines whether the transaction is a withdrawal or deposit
-- Calculates the applicable transaction charge
-- Calculates the agent commission
-- Calculates the total amount
-- Checks whether the transaction falls within the specified transaction limit
-- Displays the results
+Enter total fare: 10000
+Enter number of passengers: 4
 
-## 🛠️ Technologies Used
-
-- Python 3
-- Pseudocode
-- Flowcharts
-
-## ▶️ How to Run
-
-Make sure Python 3 is installed.
-
-Clone the repository:
-
-```bash
-git clone https://github.com/isaac-easie/mobile-money-transaction-calculator.git
+Fare Summary
+Total Fare: UGX 10000.00
+Passengers: 4
+Fare per passenger: UGX 2500.00
